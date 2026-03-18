@@ -1,0 +1,11 @@
+{
+  "name": "brand-toolkit",
+  "description": "Methodology-grounded brand building toolkit. Positioning, messaging, voice, visual identity, audit, and competitive analysis powered by Dunford, Miller, Neumeier, and NN/g frameworks.",
+  "version": "0.1.0",
+  "author": {
+    "name": "jgerton"
+  },
+  "repository": "https://github.com/jgerton/brand-toolkit",
+  "license": "MIT",
+  "keywords": ["brand", "positioning", "messaging", "voice", "identity", "marketing"]
+}
