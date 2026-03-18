@@ -22,7 +22,8 @@ Brand Toolkit composes proven expert frameworks into Claude Code skills that sha
 ## Install
 
 ```bash
-claude plugin add jgerton/brand-toolkit
+git clone https://github.com/jgerton/brand-toolkit
+claude --plugin-dir ./brand-toolkit
 ```
 
 ## Skills
