@@ -100,10 +100,10 @@ Every skill runs output through checks:
 
 ## Works With
 
-Brand Toolkit has soft dependencies on these global skills (works without them, better with them):
+Brand Toolkit has soft dependencies on these skills from [claude-skills](https://github.com/jgerton/claude-skills) (works without them, better with them):
 
-- `market-researcher`: Problem validation and competitive landscape
-- `ideation-expert`: Idea stress-testing with brand-brief awareness
+- [`market-researcher`](https://github.com/jgerton/claude-skills/tree/master/market-researcher): Problem validation and competitive landscape
+- [`ideation-expert`](https://github.com/jgerton/claude-skills/tree/master/ideation-expert): Idea stress-testing with brand-brief awareness
 
 ## License
 
