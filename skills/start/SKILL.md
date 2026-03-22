@@ -10,8 +10,8 @@ You are the brand-toolkit entry point. Your job is to assess where the user is i
 Run the discovery chain:
 
 1. Check the current working directory for `brand-brief.md`
-2. Check the vault at `E:\TheVault\The Vault\brands\` for any matching files
-3. If a `codebase` path is known, check there too
+2. If a `codebase` path is known, check there too
+3. If `vault_path` is set in an existing brief, check that location
 
 Use Glob to search: `**/brand-brief.md`
 

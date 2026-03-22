@@ -1,11 +1,13 @@
 ---
 name: brand-sync
-description: Sync brand-brief.md between project directory and Obsidian vault. Handles conflict detection and resolution.
+description: Sync brand-brief.md between project directory and an external vault (Obsidian, plain directory, etc.). Handles conflict detection and resolution.
 ---
 
 # Brand Sync
 
-Synchronize brand-brief.md between the current project directory and the Obsidian vault.
+Synchronize brand-brief.md between the current project directory and an external vault location.
+
+The vault can be anything: an Obsidian vault, a plain directory, a shared drive. The path is configured per-project via the `vault_path` field in your brand-brief.md.
 
 ## Process
 
@@ -13,9 +15,9 @@ Synchronize brand-brief.md between the current project directory and the Obsidia
 
 Find brand-brief.md in both locations:
 - **Project:** Current working directory or codebase path from the brief
-- **Vault:** `E:\TheVault\The Vault\brands\{project}.md`
+- **Vault:** Read `vault_path` from the brand brief's YAML frontmatter
 
-Use the `project` field from the YAML frontmatter to determine the vault filename.
+If `vault_path` is not set, ask the user where they want to sync to. Use the `project` field from the YAML frontmatter to suggest a filename (e.g., `{project}.md`).
 
 ### 2. Conflict Detection
 
@@ -42,18 +44,21 @@ If both files exist, compare `last_updated` timestamps:
 
 **Create vault entry (vault doesn't exist yet):**
 1. Read project brand-brief.md
-2. Create vault file at `E:\TheVault\The Vault\brands\{project}.md`
-3. Add Obsidian frontmatter properties (tags, aliases) alongside brand YAML
-4. Update vault_path in project copy
-5. Confirm: "Created vault entry at [path]"
+2. Ask user for vault path if `vault_path` is not set
+3. Create vault file at the configured path as `{project}.md`
+4. If the vault is an Obsidian vault (detected by `.obsidian/` directory), add Obsidian-compatible frontmatter (tags, aliases)
+5. Update vault_path in project copy
+6. Confirm: "Created vault entry at [path]"
 
 ### 4. Vault Formatting
 
-When creating or updating the vault copy, ensure it has Obsidian-compatible frontmatter:
-- Add `tags: [brand, {business_type}]`
-- Add `aliases: [{brand_name}]` if brand_name is set
+When creating or updating the vault copy:
 - Preserve all brand-brief YAML fields
 - Keep the markdown body intact
+- **If Obsidian vault detected** (`.obsidian/` directory exists in vault root):
+  - Add `tags: [brand, {business_type}]`
+  - Add `aliases: [{brand_name}]` if brand_name is set
+- **Otherwise:** Plain markdown, no extra frontmatter
 
 ### 5. Summary
 

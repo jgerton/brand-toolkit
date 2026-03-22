@@ -13,7 +13,7 @@ project: null          # Project name (e.g., "DevClose", "FitEvol")
 codename: null         # Internal codename if different from brand name
 brand_name: null       # The actual brand name (may be TBD)
 codebase: null         # Path to the project's codebase (e.g., "E:/Projects/devclose")
-vault_path: null       # Path to vault brand file (e.g., "E:/TheVault/The Vault/brands/devclose.md")
+vault_path: null       # Path to vault brand file (e.g., "~/vault/brands/myproject.md" or Obsidian vault path)
 
 # ===== LIFECYCLE =====
 stage: seed            # Current stage in brand lifecycle
@@ -193,7 +193,7 @@ All skills follow this chain:
 
 1. Check current working directory for `brand-brief.md`
 2. Check `codebase` path (if set in an existing brief) for `brand-brief.md`
-3. Check vault at `E:\TheVault\The Vault\brands\{project}.md`
+3. Check `vault_path` if set in an existing brief
 4. If none found, check if `start` should create one
 5. If multiple found, use the most recently updated (`last_updated` field)
 
