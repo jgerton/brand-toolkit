@@ -62,9 +62,9 @@ Start Claude Code in any project directory:
 claude
 ```
 
-Run the `start` skill. It'll check your current directory for an existing brand brief, assess where you are in your brand journey, and route you to the right next step. If it loads and asks you about your project, you're good.
+Run the `/brand-toolkit:start` skill. It'll check your current directory for an existing brand brief, assess where you are in your brand journey, and route you to the right next step. If it loads and asks you about your project, you're good.
 
-If you want to test without a real project, just invoke `start` in any directory. It'll tell you what it found (probably nothing) and offer paths forward from there.
+If you want to test without a real project, just invoke `/brand-toolkit:start` in any directory. It'll tell you what it found (probably nothing) and offer paths forward from there.
 
 ---
 
@@ -97,12 +97,12 @@ Brand Toolkit works on its own, but plays better with a couple of skills from [c
 - `market-researcher`: Problem validation and competitive landscape research. The `start` skill can route you here when your idea needs validation before brand positioning makes sense.
 - `ideation-expert`: Stress-tests your concept with brand-brief awareness.
 
-Without these, the toolkit still runs, it just skips the research routing options. If `start` can't find them, it'll say so and offer to proceed without.
+Without these, the toolkit still runs, it just skips the research routing options. If `/brand-toolkit:start` can't find them, it'll say so and offer to proceed without.
 
 ---
 
 ## Your First Brand Session
 
-Once it's installed, run `start` in a project directory. From there, the toolkit figures out where you are and what to do next. New project with nothing built yet? It'll talk you through the seed stage. Existing product with scattered brand assets? It routes to the brand audit. Active brand that needs a refresh? It reads your existing brief and picks up where you left off.
+Once it's installed, run `/brand-toolkit:start` in a project directory. From there, the toolkit figures out where you are and what to do next. New project with nothing built yet? It'll talk you through the seed stage. Existing product with scattered brand assets? It routes to the brand audit. Active brand that needs a refresh? It reads your existing brief and picks up where you left off.
 
-The entry point is always `start`. Everything else follows from there.
+The entry point is always `/brand-toolkit:start`. Everything else follows from there.

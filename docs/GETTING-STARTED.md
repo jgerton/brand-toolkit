@@ -26,10 +26,10 @@ These aren't "AI interprets the concept of positioning." The skill literally wor
 
 ## Your first run
 
-Open any project directory. Run `start`.
+Open any project directory. Run `/brand-toolkit:start`.
 
 ```
-brand-toolkit:start
+/brand-toolkit:start
 ```
 
 The skill looks for an existing `brand-brief.md` first. It checks your current directory, your codebase path, and your vault if you use one.
@@ -60,7 +60,7 @@ The skill adapts to how much you front-load. If you say "I have a SaaS at E:/Pro
 
 ## Walk-through: building your positioning
 
-This is where the real work starts. Run `brand-positioning` after `start` sets up your brief.
+This is where the real work starts. Run `brand-positioning` after `/brand-toolkit:start` sets up your brief.
 
 ### The skill picks its mode based on what you know
 
@@ -182,7 +182,7 @@ Skip one and the downstream skills flag it. They don't gatekeep. They just make 
 
 | Skill | What it does | Framework |
 |-------|-------------|-----------|
-| `start` | Detects where you are, routes you | State machine |
+| `/brand-toolkit:start` | Detects where you are, routes you | State machine |
 | `brand-positioning` | Establishes your unique position | Dunford 5-component + Neumeier Onlyness |
 | `brand-messaging` | Brand story, tagline, pitch | Miller StoryBrand |
 | `brand-voice` | How your brand talks | NN/g + Aaker + Jung |

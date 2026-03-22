@@ -21,7 +21,7 @@ Brand Toolkit composes proven expert frameworks into Claude Code skills that sha
 
 ## Get Started
 
-Clone it, point Claude Code at it, run `start`.
+Clone it, point Claude Code at it, run `/brand-toolkit:start`.
 
 - [Installation guide](docs/INSTALLATION.md) - two install methods, takes 30 seconds
 - [Getting started](docs/GETTING-STARTED.md) - your first brand positioning in 10 minutes
