@@ -105,6 +105,13 @@ Brand Toolkit has soft dependencies on these skills from [claude-skills](https:/
 - [`market-researcher`](https://github.com/jgerton/claude-skills/tree/master/market-researcher): Problem validation and competitive landscape
 - [`ideation-expert`](https://github.com/jgerton/claude-skills/tree/master/ideation-expert): Idea stress-testing with brand-brief awareness
 
+## Community
+
+Building more tools like this in the open. Come build with us:
+
+- [You Craft. AI Helps.](https://www.skool.com/you-craft-ai-helps/about) — Skool community for Claude Code practitioners
+- [jpgerton.com](https://jpgerton.com) — tutorials, tools, and build-in-public updates
+
 ## License
 
 MIT
