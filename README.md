@@ -19,12 +19,12 @@ Brand Toolkit composes proven expert frameworks into Claude Code skills that sha
 | Personality | Brand personality model | David Aaker |
 | Visual | Stylescapes methodology | Chris Do |
 
-## Install
+## Get Started
 
-```bash
-git clone https://github.com/jgerton/brand-toolkit
-claude --plugin-dir ./brand-toolkit
-```
+Clone it, point Claude Code at it, run `start`.
+
+- [Installation guide](docs/INSTALLATION.md) - two install methods, takes 30 seconds
+- [Getting started](docs/GETTING-STARTED.md) - your first brand positioning in 10 minutes
 
 ## Skills
 
