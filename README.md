@@ -2,23 +2,6 @@
 
 A Claude Code plugin for methodology-grounded brand building. Positioning, messaging, voice, visual identity, audit, and competitive analysis powered by proven expert frameworks.
 
-## The Problem
-
-Existing brand tools are siloed SaaS products that produce generic output. They don't adapt to your business type, can't integrate into a developer's workflow, and treat branding as a fill-in-the-blank exercise.
-
-Brand Toolkit composes proven expert frameworks into Claude Code skills that share state via a smart manifest, adapt to your knowledge level, and produce distinctive, specific output.
-
-## Frameworks
-
-| Area | Framework | Expert |
-|------|-----------|--------|
-| Positioning | 5-component positioning | April Dunford |
-| Differentiation | Onlyness test | Marty Neumeier |
-| Messaging | 7-element BrandScript | Donald Miller |
-| Voice | 4 voice dimensions | Nielsen Norman Group |
-| Personality | Brand personality model | David Aaker |
-| Visual | Stylescapes methodology | Chris Do |
-
 ## Install
 
 ```bash
@@ -74,6 +57,23 @@ Nothing gets written to your system. Good for kicking the tires.
 
 - [Full installation guide](docs/INSTALLATION.md) with troubleshooting
 - [Getting started](docs/GETTING-STARTED.md) - your first brand positioning in 10 minutes
+
+## The Problem
+
+Existing brand tools are siloed SaaS products that produce generic output. They don't adapt to your business type, can't integrate into a developer's workflow, and treat branding as a fill-in-the-blank exercise.
+
+Brand Toolkit composes proven expert frameworks into Claude Code skills that share state via a smart manifest, adapt to your knowledge level, and produce distinctive, specific output.
+
+## Frameworks
+
+| Area | Framework | Expert |
+|------|-----------|--------|
+| Positioning | 5-component positioning | April Dunford |
+| Differentiation | Onlyness test | Marty Neumeier |
+| Messaging | 7-element BrandScript | Donald Miller |
+| Voice | 4 voice dimensions | Nielsen Norman Group |
+| Personality | Brand personality model | David Aaker |
+| Visual | Stylescapes methodology | Chris Do |
 
 ## Skills
 
