@@ -2,6 +2,62 @@
 
 A Claude Code plugin for methodology-grounded brand building. Positioning, messaging, voice, visual identity, audit, and competitive analysis powered by proven expert frameworks.
 
+## Install
+
+```bash
+git clone https://github.com/jgerton/brand-toolkit.git ~/.claude/plugins/brand-toolkit
+```
+
+Works on Mac, Linux, and Windows (Git Bash / WSL). Open a new Claude Code session and run `/brand-toolkit:start`.
+
+<details>
+<summary><strong>Windows PowerShell</strong></summary>
+
+```powershell
+git clone https://github.com/jgerton/brand-toolkit.git $env:USERPROFILE\.claude\plugins\brand-toolkit
+```
+
+</details>
+
+<details>
+<summary><strong>Windows Command Prompt</strong></summary>
+
+```cmd
+git clone https://github.com/jgerton/brand-toolkit.git %USERPROFILE%\.claude\plugins\brand-toolkit
+```
+
+</details>
+
+<details>
+<summary><strong>Verify it worked</strong></summary>
+
+Run the verify script for your terminal:
+
+| Terminal | Command |
+|----------|---------|
+| Bash / WSL | `~/.claude/plugins/brand-toolkit/scripts/verify-install.sh` |
+| PowerShell | `& "$env:USERPROFILE\.claude\plugins\brand-toolkit\scripts\verify-install.ps1"` |
+| Command Prompt | `%USERPROFILE%\.claude\plugins\brand-toolkit\scripts\verify-install.bat` |
+
+</details>
+
+<details>
+<summary><strong>Just want to try it once?</strong></summary>
+
+Clone anywhere and point Claude Code at it for one session:
+
+```bash
+git clone https://github.com/jgerton/brand-toolkit.git
+claude --plugin-dir ./brand-toolkit
+```
+
+Nothing gets written to your system. Good for kicking the tires.
+
+</details>
+
+- [Full installation guide](docs/INSTALLATION.md) with troubleshooting
+- [Getting started](docs/GETTING-STARTED.md) - your first brand positioning in 10 minutes
+
 ## The Problem
 
 Existing brand tools are siloed SaaS products that produce generic output. They don't adapt to your business type, can't integrate into a developer's workflow, and treat branding as a fill-in-the-blank exercise.
@@ -18,13 +74,6 @@ Brand Toolkit composes proven expert frameworks into Claude Code skills that sha
 | Voice | 4 voice dimensions | Nielsen Norman Group |
 | Personality | Brand personality model | David Aaker |
 | Visual | Stylescapes methodology | Chris Do |
-
-## Get Started
-
-Clone it, point Claude Code at it, run `/brand-toolkit:start`.
-
-- [Installation guide](docs/INSTALLATION.md) - two install methods, takes 30 seconds
-- [Getting started](docs/GETTING-STARTED.md) - your first brand positioning in 10 minutes
 
 ## Skills
 
