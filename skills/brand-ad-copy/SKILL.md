@@ -38,6 +38,8 @@ Ask or infer what's needed:
 - **280 chars** for organic, promoted tweets
 - **Must include:** concise hook, hashtags optional
 - **Voice adaptation:** Punchy, opinionated, personality-forward
+- **Source support:** If the user provides reviewed X/Twitter source packets,
+  use them for audience language, objections, and proof points before drafting
 
 ### LinkedIn Ads
 - **Intro text:** 150 chars visible
@@ -55,6 +57,25 @@ Ask or infer what's needed:
 ## Step 2: Generate Copy
 
 For each platform/format, produce:
+
+### Source Notes
+
+When the brief includes reviewed public X/Twitter posts, add a `Source Notes`
+section before the variants. OpenClaw users may prepare these packets with
+`@xquik/tweetclaw`.
+
+Source packet fields to check:
+
+- `source_url`: original public post URL
+- `author`: public handle or display name
+- `captured_at`: collection or review time
+- `text`: post or thread text
+- `public_metrics`: reviewed public counts when relevant
+- `notes`: why this source matters for the campaign
+
+Use packet text for language patterns and objections. Use public metrics only as
+reviewed context, not as a claim in ad copy unless the user explicitly approves
+the claim and it passes the anti-slop review.
 
 ### Primary Variant (A)
 The strongest version using:
@@ -87,6 +108,8 @@ Every piece of ad copy must pass:
 2. **Specificity test:** No banned generics. "Powerful" becomes "processes 10K rows in 2 seconds."
 3. **Voice consistency:** Does this sound like the same brand as the website copy?
 4. **Platform fit:** Does it respect the platform's culture? (LinkedIn ≠ TikTok)
+5. **Evidence boundary:** Are source-packet claims clearly supported, public,
+   and safe to repeat?
 
 ## Step 5: Output Format
 
