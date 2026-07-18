@@ -112,3 +112,5 @@ if ($errors -eq 0) {
     Write-Host "  Found $errors issue(s). Fix them and run this script again."
 }
 Write-Host ""
+
+exit $errors

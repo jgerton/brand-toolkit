@@ -101,3 +101,5 @@ else
   echo "  Found $errors issue(s). Fix them and run this script again."
 fi
 echo ""
+
+exit "$errors"
