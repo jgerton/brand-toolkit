@@ -62,20 +62,29 @@ For each platform/format, produce:
 
 When the brief includes reviewed public X/Twitter posts, add a `Source Notes`
 section before the variants. OpenClaw users may prepare these packets with
-`@xquik/tweetclaw`.
+[`@xquik/tweetclaw`](https://github.com/Xquik-dev/tweetclaw).
 
-Source packet fields to check:
+Required packet fields:
 
 - `source_url`: original public post URL
 - `author`: public handle or display name
 - `captured_at`: collection or review time
 - `text`: post or thread text
+
+Optional packet fields:
+
+- `source`: capture provider, or `reviewed_packet` when omitted
 - `public_metrics`: reviewed public counts when relevant
 - `notes`: why this source matters for the campaign
 
 Use packet text for language patterns and objections. Use public metrics only as
 reviewed context, not as a claim in ad copy unless the user explicitly approves
 the claim and it passes the anti-slop review.
+
+Do not infer missing metrics, attribution, or audience sentiment. Keep
+`source_url` with the notes so every source-backed claim remains traceable.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 
 ### Primary Variant (A)
 The strongest version using:

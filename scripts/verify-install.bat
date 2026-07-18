@@ -92,4 +92,4 @@ if %errors%==0 (
 )
 echo.
 
-endlocal
+endlocal & exit /b %errors%
